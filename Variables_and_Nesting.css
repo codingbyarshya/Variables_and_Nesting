@@ -1,0 +1,47 @@
+.outer-box {
+  width: 85%;
+  border: 1px solid red;
+  background-color: white;
+  padding: 20px;
+}
+.outer-box h1 {
+  color: green;
+  text-align: center;
+  text-decoration: underline blue;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.outer-box h1 span.blue {
+  color: green;
+}
+.outer-box .box2 {
+  justify-content: center;
+  text-align: center;
+  height: 70px;
+}
+.outer-box .inner-box {
+  border: 2px solid green;
+  background-color: white;
+  margin-top: 0px;
+  padding: 10px;
+  display: inline-block;
+}
+.outer-box .inner-box span.blue {
+  color: blue;
+  white-space: pre-wrap;
+}
+.outer-box .inner-box span.red {
+  color: red;
+  white-space: pre-wrap;
+}
+.outer-box .inner-box.a span, .outer-box .inner-box.c span {
+  color: blue;
+  white-space: pre-wrap;
+}
+.outer-box .inner-box.b span, .outer-box .inner-box.d span {
+  color: red;
+  white-space: pre-wrap;
+}
+
+/*# sourceMappingURL=Variables_and_Nesting.css.map */

@@ -1,0 +1,71 @@
+// Define variables
+$box-width: 85%;
+$border-color: red;
+$text-color: green;
+$text-color-blue: blue;
+$text-color-red: red;
+
+// Define styles for the outer box
+.outer-box {
+  width: $box-width;
+  border: 1px solid $border-color;
+  background-color: white;
+  padding: 20px;
+  
+  // Define styles for the heading text
+  h1 {
+    color: $text-color;
+    text-align: center;
+    text-decoration: underline blue;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    // Define styles for the blue text
+    span.blue {
+      color: $text-color;
+    }
+  }
+  .box2{
+    justify-content: center;
+    text-align: center;
+    height: 70px;
+
+  }
+  
+  // Define styles for the four inner boxes
+  .inner-box {
+    border: 2px solid green;
+    background-color: white;
+    margin-top: 0px;
+    padding: 10px;
+    display: inline-block;
+    
+    // Define styles for the blue text
+    span.blue {
+      color: $text-color-blue;
+      white-space: pre-wrap;
+    }
+    
+    // Define styles for the red text
+    span.red {
+      color: $text-color-red;
+      white-space: pre-wrap;
+    }
+    
+    // Define styles for box a and c
+    &.a, &.c {
+      span {
+        color: $text-color-blue;
+        white-space: pre-wrap;
+      }
+    }
+    
+    // Define styles for box b and d
+    &.b, &.d {
+      span {
+        color: $text-color-red;
+        white-space: pre-wrap;
+      }
+    }
+  }
+}
